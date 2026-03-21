@@ -1,0 +1,1500 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      PrintifyPro – Premium Printers & Professional Printing Solutions
+    </title>
+    <meta
+      name="description"
+      content="Discover high-efficiency ink tank printers, business inkjets, large format, textile, label, POS and dot matrix printers. Low cost, high quality printing in India."
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                950: "#0f172a",
+                900: "#1e293b",
+                700: "#1d4ed8",
+                600: "#2563eb",
+              },
+              accent: { 500: "#10b981", 400: "#34d399", 300: "#6ee7b7" },
+            },
+            fontFamily: {
+              heading: ["Playfair Display", "serif"],
+              body: ["Inter", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", system-ui, sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Playfair Display", serif;
+      }
+      .glass {
+        backdrop-filter: blur(12px);
+      }
+      .hero-bg {
+        background-image:
+          linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)),
+          url("https://images.unsplash.com/photo-1580587771525-78b9e3f4dd10?auto=format&fit=crop&q=80");
+        background-size: cover;
+        background-position: center;
+      }
+      .card-hover {
+        transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      .card-hover:hover {
+        transform: translateY(-12px) scale(1.04);
+        box-shadow: 0 25px 50px -12px rgb(16 185 129 / 0.3);
+      }
+    </style>
+  </head>
+  
+  <body class="bg-gray-950 text-gray-100 antialiased">
+    <!-- NAVBAR (unchanged) -->
+    <header
+      class="fixed top-0 z-[100] w-full border-b border-white/5 bg-[#050a0a]/80 backdrop-blur-xl"
+    >
+      <nav class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="flex h-24 items-center justify-between">
+          <a
+            href="index.html"
+            class="group flex items-center gap-2 text-2xl font-black tracking-tighter text-white"
+          >
+            <div
+              class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-400 to-cyan-500 text-black shadow-lg shadow-emerald-500/20 group-hover:rotate-12 transition-transform"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+              >
+                <path
+                  d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"
+                />
+                <rect x="6" y="14" width="12" height="8" rx="2" />
+                <path d="M6 9V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v5" />
+              </svg>
+            </div>
+            <span
+              >PRINTIFY<span class="text-emerald-500 italic">PRO</span></span
+            >
+          </a>
+
+          <div class="hidden lg:flex items-center gap-10">
+            <div
+              class="flex items-center gap-8 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400"
+            >
+              <a
+                href="products.html"
+                class="hover:text-emerald-400 transition-colors"
+                >Products</a
+              >
+              <a
+                href="services.html"
+                class="hover:text-emerald-400 transition-colors"
+                >Services</a
+              >
+              <a
+                href="#business"
+                class="hover:text-emerald-400 transition-colors"
+                >Enterprise</a
+              >
+              <a
+                href="#large-format"
+                class="hover:text-emerald-400 transition-colors"
+                >Industrial</a
+              >
+            </div>
+
+            <div class="h-6 w-px bg-white/10 mx-2"></div>
+
+            <a
+              href="#support"
+              class="text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors"
+            >
+              Support
+            </a>
+          </div>
+
+          <div class="flex items-center gap-6">
+            <button
+              class="hidden sm:flex items-center gap-2 rounded-xl bg-white text-black px-6 py-3 text-sm font-black hover:bg-emerald-400 transition-all active:scale-95"
+            >
+              Find Your Unit
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="3"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+
+            <button
+              id="mobile-menu-btn"
+              class="lg:hidden text-white hover:text-emerald-400 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        id="mobile-menu"
+        class="hidden fixed inset-0 z-[90] bg-[#050a0a] pt-32 px-10"
+      >
+        <div
+          class="flex flex-col gap-8 text-3xl font-black text-white uppercase tracking-tighter"
+        >
+          <a href="products.html" class="hover:text-emerald-500">Products</a>
+          <a href="services.html" class="hover:text-emerald-500">Services</a>
+          <a href="#business" class="hover:text-emerald-500">Enterprise</a>
+          <a href="#large-format" class="hover:text-emerald-500">Industrial</a>
+          <a href="#textile" class="hover:text-emerald-500">Textile</a>
+          <a href="#support" class="text-lg text-gray-500 mt-4"
+            >Customer Support</a
+          >
+
+          <a
+            href="#contact"
+            class="mt-10 py-5 bg-emerald-500 text-black text-center rounded-2xl text-xl"
+          >
+            Consult an Expert
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="relative min-h-screen flex items-center overflow-hidden bg-[#050a0a] pt-20"
+    >
+      <div
+        class="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-emerald-900/20 blur-[120px] rounded-full"
+      ></div>
+      <div
+        class="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-cyan-900/20 blur-[150px] rounded-full"
+      ></div>
+
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="relative z-10 text-left">
+            <div
+              class="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border border-emerald-500/20 px-4 py-1.5 rounded-full text-sm font-medium text-emerald-400 mb-8"
+            >
+              <span class="relative flex h-3 w-3">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"
+                ></span>
+              </span>
+              Next-Gen InkTank Technology
+            </div>
+
+            <h1
+              class="text-6xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.1]"
+            >
+              Print Without <br />
+              <span
+                class="bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent"
+                >Boundaries.</span
+              >
+            </h1>
+
+            <p
+              class="mt-8 text-lg md:text-xl text-gray-400 max-w-xl leading-relaxed"
+            >
+              The
+              <span class="text-white font-semibold">PrintifyPro Series</span>
+              redefines economy. Experience 11,000+ pages per refill with zero
+              cartridge waste. High-speed, high-resolution, ultra-low cost.
+            </p>
+
+            <div
+              class="mt-10 grid grid-cols-2 gap-6 border-l border-white/10 pl-6"
+            >
+              <div>
+                <p class="text-3xl font-bold text-white">$0.016</p>
+                <p class="text-sm text-gray-500 uppercase tracking-wider">
+                  Cost Per Page
+                </p>
+              </div>
+              <div>
+                <p class="text-3xl font-bold text-white">11k+</p>
+                <p class="text-sm text-gray-500 uppercase tracking-wider">
+                  Pages Per Tank
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-12 flex flex-col sm:flex-row gap-4">
+              <a
+                href="#home-office"
+                class="group px-8 py-4 rounded-xl bg-emerald-500 text-black font-bold hover:bg-emerald-400 transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20"
+              >
+                View PrintifyPro Range
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 group-hover:translate-x-1 transition-transform"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#compare"
+                class="px-8 py-4 rounded-xl border border-white/20 text-white font-semibold hover:bg-white/5 transition-all text-center"
+              >
+                Compare Models
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="relative lg:h-[700px] flex items-center justify-center pt-12"
+          >
+            <div
+              class="absolute w-[120%] h-[120%] bg-emerald-500/10 blur-[120px] rounded-full pointer-events-none opacity-60"
+            ></div>
+
+            <div class="relative w-full max-w-2xl aspect-[4/3] group">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-[3rem] border border-white/10 backdrop-blur-2xl shadow-[0_0_100px_-20px_rgba(16,185,129,0.2)] transition-transform duration-700 group-hover:scale-[1.02]"
+              ></div>
+
+              <div
+                class="absolute inset-0 flex items-center justify-center p-12"
+              >
+                <img
+                  src="./printer_image_no1_hero_section.png"
+                  alt="PrintifyPro Flagship Model"
+                  class="w-full h-auto drop-shadow-[0_35px_35px_rgba(0,0,0,0.6)] group-hover:-translate-y-4 transition-transform duration-700 ease-out"
+                />
+
+                <p
+                  class="hidden text-gray-500 font-mono text-xs uppercase tracking-widest opacity-30"
+                >
+                  [ Render: PrintifyPro_X1_Elite ]
+                </p>
+              </div>
+
+              <div
+                class="absolute -bottom-10 -left-6 md:-left-12 p-[1px] rounded-3xl bg-gradient-to-br from-emerald-400 to-cyan-500 shadow-2xl shadow-emerald-500/20 animate-bounce-slow"
+              >
+                <div
+                  class="bg-[#050a0a] backdrop-blur-md p-6 rounded-[calc(1.5rem-1px)]"
+                >
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="text-4xl font-black text-white tracking-tighter italic"
+                    >
+                      90%
+                    </div>
+                    <div class="h-8 w-px bg-white/10"></div>
+                    <div class="flex flex-col">
+                      <span
+                        class="text-[10px] font-black text-emerald-400 uppercase tracking-widest leading-none"
+                        >Efficiency</span
+                      >
+                      <span
+                        class="text-[9px] font-bold text-gray-500 uppercase tracking-tighter mt-1"
+                        >vs. Laser Printers</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="absolute -top-6 -right-6 hidden md:block p-[1px] rounded-2xl bg-white/10 backdrop-blur-md"
+              >
+                <div
+                  class="bg-[#050a0a]/40 p-4 rounded-[calc(1rem-1px)] flex flex-col gap-1"
+                >
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="h-1.5 w-1.5 rounded-full bg-cyan-400 animate-pulse"
+                    ></div>
+                    <span
+                      class="text-[9px] font-bold text-gray-300 uppercase tracking-widest"
+                      >PrecisionCore™ Ready</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div class="h-1.5 w-1.5 rounded-full bg-emerald-400"></div>
+                    <span
+                      class="text-[9px] font-bold text-gray-300 uppercase tracking-widest"
+                      >Heat-Free Tech</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST / STATS BAR (unchanged) -->
+    <div
+      class="relative bg-[#050a0a] border-y border-white/5 py-12 overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-emerald-500/5 via-transparent to-cyan-500/5 opacity-50"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-4 divide-x-0 md:divide-x divide-white/10"
+        >
+          <div
+            class="flex flex-col items-center px-4 group transition-transform hover:-translate-y-1"
+          >
+            <div
+              class="mb-3 p-3 rounded-xl bg-emerald-500/10 text-emerald-400 group-hover:bg-emerald-500 group-hover:text-black transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <div
+              class="text-4xl lg:text-5xl font-black text-white tracking-tighter italic"
+            >
+              75%<span class="text-emerald-500 text-2xl ml-1">+</span>
+            </div>
+            <div
+              class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-[0.2em] mt-2"
+            >
+              Lower Printing Cost
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center px-4 group transition-transform hover:-translate-y-1"
+          >
+            <div
+              class="mb-3 p-3 rounded-xl bg-cyan-500/10 text-cyan-400 group-hover:bg-cyan-500 group-hover:text-black transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                />
+              </svg>
+            </div>
+            <div
+              class="text-4xl lg:text-5xl font-black text-white tracking-tighter"
+            >
+              11K<span class="text-cyan-500 text-2xl ml-1">+</span>
+            </div>
+            <div
+              class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-[0.2em] mt-2"
+            >
+              Pages per Refill
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center px-4 group transition-transform hover:-translate-y-1"
+          >
+            <div
+              class="mb-3 p-3 rounded-xl bg-blue-500/10 text-blue-400 group-hover:bg-blue-500 group-hover:text-black transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+            <div
+              class="text-4xl lg:text-5xl font-black text-white tracking-tighter"
+            >
+              6750
+            </div>
+            <div
+              class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-[0.2em] mt-2"
+            >
+              Max DPI Resolution
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center px-4 group transition-transform hover:-translate-y-1"
+          >
+            <div
+              class="mb-3 p-3 rounded-xl bg-orange-500/10 text-orange-400 group-hover:bg-orange-500 group-hover:text-black transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
+            </div>
+            <div
+              class="text-3xl lg:text-4xl font-black text-white tracking-tight uppercase leading-none"
+            >
+              Heat-Free
+            </div>
+            <div
+              class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-[0.2em] mt-2"
+            >
+              Precision Core Tech
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TECHNOLOGY HIGHLIGHTS (unchanged) -->
+    <section class="py-24 bg-[#050a0a] relative overflow-hidden">
+      <div
+        class="absolute top-1/4 left-1/2 -translate-x-1/2 text-[15rem] font-black text-white/[0.02] select-none pointer-events-none"
+      >
+        PRINTIFY<span class="text-emerald-500 italic">PRO</span>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
+        >
+          <div class="max-w-2xl">
+            <h2
+              class="text-4xl md:text-6xl font-bold tracking-tight text-white"
+            >
+              Why <span class="text-emerald-500">PrintifyPro</span> Technology?
+            </h2>
+            <p class="mt-6 text-xl text-gray-400 leading-relaxed">
+              Engineered to eliminate the hidden costs of printing. Our
+              PrecisionCore tech delivers industrial reliability for your home
+              and office.
+            </p>
+          </div>
+          <div class="hidden md:block pb-2">
+            <div
+              class="h-1 w-32 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full"
+            ></div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div
+            class="group relative p-8 rounded-[2.5rem] bg-gradient-to-b from-white/10 to-transparent border border-white/10 hover:border-emerald-500/50 transition-all duration-500 hover:shadow-[0_0_30px_-10px_rgba(16,185,129,0.3)]"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-8 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-black transition-all"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">Heat-Free Inkjet</h3>
+            <p
+              class="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors"
+            >
+              Unlike laser printers, our tech requires no heat to warm up. That
+              means
+              <span class="text-white font-medium"
+                >50% less power consumption</span
+              >
+              and a lightning-fast first page out.
+            </p>
+            <div
+              class="mt-8 flex items-center gap-2 text-emerald-400 text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity"
+            >
+              LEARN MORE <span>→</span>
+            </div>
+          </div>
+
+          <div
+            class="group relative p-8 rounded-[2.5rem] bg-gradient-to-b from-white/10 to-transparent border border-white/10 hover:border-cyan-500/50 transition-all duration-500 hover:shadow-[0_0_30px_-10px_rgba(6,182,212,0.3)]"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-8 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-black transition-all"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.628.283a2 2 0 01-1.186.13l-2.094-.419a2 2 0 00-1.613.92L5.877 19.143a2 2 0 00.324 2.392l.81.81a2 2 0 002.828 0l6.446-6.446z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">
+              Industrial High-Yield
+            </h3>
+            <p
+              class="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors"
+            >
+              One set of ink bottles replaces
+              <span class="text-white font-medium"
+                >75 traditional cartridges</span
+              >. It’s better for the planet and significantly better for your
+              wallet.
+            </p>
+            <div
+              class="mt-8 flex items-center gap-2 text-cyan-400 text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity"
+            >
+              CALCULATE SAVINGS <span>→</span>
+            </div>
+          </div>
+
+          <div
+            class="group relative p-8 rounded-[2.5rem] bg-gradient-to-b from-white/10 to-transparent border border-white/10 hover:border-blue-500/50 transition-all duration-500 hover:shadow-[0_0_30px_-10px_rgba(59,130,246,0.3)]"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-400 mb-8 group-hover:scale-110 group-hover:bg-blue-500 group-hover:text-black transition-all"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">
+              PrecisionCore Printhead
+            </h3>
+            <p
+              class="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors"
+            >
+              Experience
+              <span class="text-white font-medium">6750 DPI</span> sharpness.
+              From crisp monochrome documents to professional marketing flyers,
+              quality is never compromised.
+            </p>
+            <div
+              class="mt-8 flex items-center gap-2 text-blue-400 text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity"
+            >
+              VIEW SAMPLES <span>→</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRINTER CATEGORIES GRID (unchanged) -->
+    <section class="py-24 bg-[#050a0a]">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-5xl font-bold text-center tracking-tight mb-16">
+          Our Printer Ranges
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            id="home-office"
+            class="group bg-gradient-to-b from-white/10 to-transparent border border-white/10 hover:border-emerald-500/50 transition-all duration-500 hover:shadow-[0_0_30px_-10px_rgba(16,185,129,0.3)] rounded-3xl overflow-hidden card-hover"
+          >
+            <img
+              src="l-shaped-home-office-images-with-attahced-bookshelf.jpg"
+              alt="Home Office Ink Tank Printer"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-8">
+              <h3 class="text-3xl font-semibold">Home & Office PrintifyPro</h3>
+              <p class="text-gray-400 mt-3">
+                India’s favorite ink tank series. All-in-one, wireless, low-cost
+                printing for home & small office.
+              </p>
+              <a
+                href="#"
+                class="mt-6 inline-flex items-center text-accent-400 hover:text-accent-300"
+                >View Models →</a
+              >
+            </div>
+          </div>
+
+          <div
+            id="business"
+            class="group bg-gradient-to-b from-white/10 to-transparent border border-white/10 hover:border-emerald-500/50 transition-all duration-500 hover:shadow-[0_0_30px_-10px_rgba(16,185,129,0.3)] rounded-3xl overflow-hidden card-hover"
+          >
+            <img
+              src="business-inkjet-printers-500x500.webp"
+              alt="Business Inkjet Printer"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-8">
+              <h3 class="text-3xl font-semibold">Business Inkjet</h3>
+              <p class="text-gray-400 mt-3">
+                Fast, reliable, high-volume A4 printers & all-in-ones for
+                offices & workgroups.
+              </p>
+              <a
+                href="#"
+                class="mt-6 inline-flex items-center text-accent-400 hover:text-accent-300"
+                >View Models →</a
+              >
+            </div>
+          </div>
+
+          <div
+            id="large-format"
+            class="group bg-gradient-to-b from-white/10 to-transparent border border-white/10 hover:border-emerald-500/50 transition-all duration-500 hover:shadow-[0_0_30px_-10px_rgba(16,185,129,0.3)] rounded-3xl overflow-hidden card-hover"
+          >
+            <img
+              src="large_format_printer.jpg"
+              alt="Large Format Printer"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-8">
+              <h3 class="text-3xl font-semibold">Large Format</h3>
+              <p class="text-gray-400 mt-3">
+                Up to 64" — CAD, signage, photo, poster printing with pigment
+                inks for durability.
+              </p>
+              <a
+                href="#"
+                class="mt-6 inline-flex items-center text-accent-400 hover:text-accent-300"
+                >View Models →</a
+              >
+            </div>
+          </div>
+
+          <div
+            id="textile"
+            class="group bg-gradient-to-b from-white/10 to-transparent border border-white/10 hover:border-emerald-500/50 transition-all duration-500 hover:shadow-[0_0_30px_-10px_rgba(16,185,129,0.3)] rounded-3xl overflow-hidden card-hover"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&q=80&w=800"
+              alt="Textile DTG Printer"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-8">
+              <h3 class="text-3xl font-semibold">Textile & Garment</h3>
+              <p class="text-gray-400 mt-3">
+                Direct-to-garment & sublimation — vibrant, wash-resistant prints
+                on fabrics.
+              </p>
+              <a
+                href="#"
+                class="mt-6 inline-flex items-center text-accent-400 hover:text-accent-300"
+                >View Models →</a
+              >
+            </div>
+          </div>
+
+          <div
+            id="label-pos"
+            class="group bg-gradient-to-b from-white/10 to-transparent border border-white/10 hover:border-emerald-500/50 transition-all duration-500 hover:shadow-[0_0_30px_-10px_rgba(16,185,129,0.3)] rounded-3xl overflow-hidden card-hover"
+          >
+            <img
+              src="61NTh3yPmcL._AC_UF1000,1000_QL80_.jpg"
+              alt="POS & Label Printer"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-8">
+              <h3 class="text-3xl font-semibold">Label & POS Printers</h3>
+              <p class="text-gray-400 mt-3">
+                Thermal receipt, barcode labels, high-speed presses for retail &
+                logistics.
+              </p>
+              <a
+                href="#"
+                class="mt-6 inline-flex items-center text-accent-400 hover:text-accent-300"
+                >View Models →</a
+              >
+            </div>
+          </div>
+
+          <div
+            id="dot-matrix"
+            class="group bg-gradient-to-b from-white/10 to-transparent border border-white/10 hover:border-emerald-500/50 transition-all duration-500 hover:shadow-[0_0_30px_-10px_rgba(16,185,129,0.3)] rounded-3xl overflow-hidden card-hover"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&q=80&w=800"
+              alt="Dot Matrix Printer"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-8">
+              <h3 class="text-3xl font-semibold">Dot Matrix</h3>
+              <p class="text-gray-400 mt-3">
+                Rugged, multipart forms printing for banks, railways, heavy-duty
+                environments.
+              </p>
+              <a
+                href="#"
+                class="mt-6 inline-flex items-center text-accent-400 hover:text-accent-300"
+                >View Models →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW: PRINTER PRICING OVERVIEW SECTION -->
+    <section class="py-24 bg-[#050a0a] relative overflow-hidden">
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-emerald-500/5 blur-[120px] rounded-full pointer-events-none"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16">
+          <h2
+            class="text-5xl md:text-6xl font-black text-white tracking-tighter mb-6"
+          >
+            Transparent <span class="text-emerald-500">Pricing.</span>
+          </h2>
+          <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+            Indicative starting prices for 2026. Final costs may vary based on
+            regional taxes, current bundles, and enterprise bulk discounts.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="group relative bg-white/[0.03] border border-white/10 rounded-[2.5rem] p-8 hover:bg-white/[0.05] hover:border-emerald-500/50 transition-all duration-500"
+          >
+            <div class="mb-8">
+              <h3
+                class="text-xl font-bold text-gray-400 uppercase tracking-widest mb-2"
+              >
+                Home & Office
+              </h3>
+              <div class="flex items-baseline gap-1">
+                <span class="text-5xl font-black text-white">$115</span>
+                <span class="text-gray-500 font-medium">– $210</span>
+              </div>
+              <p class="mt-4 text-sm text-gray-500 leading-relaxed">
+                All-in-one L32xx / L13xx series. Perfect for students and remote
+                work.
+              </p>
+            </div>
+
+            <ul class="space-y-4 mb-10">
+              <li class="flex items-center gap-3 text-gray-300 text-sm">
+                <svg
+                  class="h-5 w-5 text-emerald-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Wireless App Printing
+              </li>
+              <li class="flex items-center gap-3 text-gray-300 text-sm">
+                <svg
+                  class="h-5 w-5 text-emerald-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Ultra-low Ink Costs
+              </li>
+            </ul>
+
+            <a
+              href="#contact"
+              class="block w-full py-4 text-center rounded-2xl bg-white/5 border border-white/10 text-white font-bold hover:bg-emerald-500 hover:text-black transition-all"
+            >
+              Enquire Now
+            </a>
+          </div>
+
+          <div
+            class="group relative bg-gradient-to-b from-emerald-500/10 to-transparent border border-emerald-500/40 rounded-[2.5rem] p-8 scale-105 shadow-2xl shadow-emerald-500/10 transition-all duration-500"
+          >
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 bg-emerald-500 text-black text-[10px] font-black uppercase tracking-[0.2em] px-4 py-1 rounded-full"
+            >
+              Most Popular
+            </div>
+            <div class="mb-8">
+              <h3
+                class="text-xl font-bold text-emerald-400 uppercase tracking-widest mb-2"
+              >
+                Business Inkjet
+              </h3>
+              <div class="flex items-baseline gap-1">
+                <span class="text-5xl font-black text-white">$210</span>
+                <span class="text-gray-500 font-medium">– $415</span>
+              </div>
+              <p class="mt-4 text-sm text-gray-400 leading-relaxed">
+                High-volume Workforce series. Optimized for medium office
+                workgroups.
+              </p>
+            </div>
+
+            <ul class="space-y-4 mb-10">
+              <li class="flex items-center gap-3 text-white text-sm">
+                <svg
+                  class="h-5 w-5 text-emerald-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Fast Auto-Duplexing
+              </li>
+              <li class="flex items-center gap-3 text-white text-sm">
+                <svg
+                  class="h-5 w-5 text-emerald-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                PrecisionCore Tech
+              </li>
+            </ul>
+
+            <a
+              href="#contact"
+              class="block w-full py-4 text-center rounded-2xl bg-emerald-500 text-black font-extrabold shadow-lg shadow-emerald-500/20 hover:bg-emerald-400 transition-all"
+            >
+              Get Corporate Quote
+            </a>
+          </div>
+
+          <div
+            class="group relative bg-white/[0.03] border border-white/10 rounded-[2.5rem] p-8 hover:bg-white/[0.05] hover:border-cyan-500/50 transition-all duration-500"
+          >
+            <div class="mb-8">
+              <h3
+                class="text-xl font-bold text-gray-400 uppercase tracking-widest mb-2"
+              >
+                Large Format
+              </h3>
+              <div class="flex items-baseline gap-1">
+                <span class="text-5xl font-black text-white">$1,410</span>
+                <span class="text-gray-500 font-medium">+</span>
+              </div>
+              <p class="mt-4 text-sm text-gray-500 leading-relaxed">
+                SureColor T-series/P-series. Industrial CAD and professional
+                signage.
+              </p>
+            </div>
+
+            <ul class="space-y-4 mb-10">
+              <li class="flex items-center gap-3 text-gray-300 text-sm">
+                <svg
+                  class="h-5 w-5 text-cyan-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Up to 64" Printing
+              </li>
+              <li class="flex items-center gap-3 text-gray-300 text-sm">
+                <svg
+                  class="h-5 w-5 text-cyan-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                Archival Pigment Inks
+              </li>
+            </ul>
+
+            <a
+              href="#contact"
+              class="block w-full py-4 text-center rounded-2xl bg-white/5 border border-white/10 text-white font-bold hover:bg-cyan-500 hover:text-black transition-all"
+            >
+              Request Site Visit
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-20 text-center">
+          <div
+            class="inline-block p-[1px] rounded-full bg-gradient-to-r from-emerald-500 via-cyan-500 to-blue-500"
+          >
+            <a
+              href="#contact"
+              class="block px-12 py-5 bg-[#050a0a] rounded-full text-white text-xl font-bold hover:bg-transparent hover:text-black transition-all"
+            >
+              Get Custom Bundle Pricing
+            </a>
+          </div>
+          <p class="mt-6 text-gray-500 text-sm italic">
+            *Conversion rate: 1 USD ≈ 85 INR. Prices exclusive of local GST/VAT.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / ENQUIRY FORM SECTION (unchanged) -->
+    <section id="contact" class="py-32 bg-[#050a0a] relative overflow-hidden">
+      <div
+        class="absolute top-0 right-0 w-[600px] h-[600px] bg-emerald-500/10 blur-[150px] rounded-full -mr-64 -mt-64"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-cyan-500/5 blur-[120px] rounded-full -ml-32 -mb-32"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="grid lg:grid-cols-12 gap-16 items-start">
+          <div class="lg:col-span-5">
+            <h2
+              class="text-5xl md:text-7xl font-black text-white tracking-tighter leading-none mb-8"
+            >
+              Let’s Scale Your <br />
+              <span
+                class="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent"
+                >Efficiency.</span
+              >
+            </h2>
+            <p class="text-xl text-gray-400 mb-12 leading-relaxed">
+              Tell us about your printing volume. Whether it's a single home
+              unit or a fleet of industrial textile printers, our experts will
+              craft a custom quote for you.
+            </p>
+
+            <div class="space-y-6">
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-400"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor font-bold"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <p class="text-white font-medium">
+                  Response within 4 business hours
+                </p>
+              </div>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-cyan-500/10 flex items-center justify-center text-cyan-400"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
+                  </svg>
+                </div>
+                <p class="text-white font-medium">
+                  Official Manufacturer Warranty
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <form
+              class="bg-white/[0.03] backdrop-blur-xl border border-white/10 p-8 md:p-12 rounded-[2.5rem] shadow-2xl"
+            >
+              <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <label
+                    class="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 ml-1"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="John Doe"
+                    class="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-2xl text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500/20 transition-all placeholder:text-gray-600"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 ml-1"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    placeholder="john@company.com"
+                    class="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-2xl text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500/20 transition-all placeholder:text-gray-600"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <label
+                  class="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 ml-1"
+                  >Printer Category</label
+                >
+                <div class="relative">
+                  <select
+                    class="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-2xl text-white focus:outline-none focus:border-emerald-500 appearance-none cursor-pointer"
+                  >
+                    <option class="bg-[#050a0a]">
+                      Select printer category
+                    </option>
+                    <option class="bg-[#050a0a]">
+                      Home & Office PrintifyPro
+                    </option>
+                    <option class="bg-[#050a0a]">Business Inkjet</option>
+                    <option class="bg-[#050a0a]">
+                      Industrial / Large Format
+                    </option>
+                    <option class="bg-[#050a0a]">Textile & Garment</option>
+                  </select>
+                  <div
+                    class="absolute inset-y-0 right-5 flex items-center pointer-events-none text-gray-400"
+                  >
+                    <svg
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-8">
+                <label
+                  class="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 ml-1"
+                  >Project Details</label
+                >
+                <textarea
+                  rows="4"
+                  placeholder="Tell us about your estimated monthly pages..."
+                  class="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-2xl text-white focus:outline-none focus:border-emerald-500 transition-all placeholder:text-gray-600"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="group relative w-full py-5 bg-emerald-500 text-black font-black text-lg rounded-2xl overflow-hidden transition-all hover:bg-emerald-400 active:scale-[0.98]"
+              >
+                <span
+                  class="relative z-10 flex items-center justify-center gap-2"
+                >
+                  Send Enquiry
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor font-bold"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="3"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </span>
+              </button>
+
+              <p class="mt-6 text-center text-xs text-gray-500">
+                Secure transmission. We never share your data with 3rd parties.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER (unchanged) -->
+    <footer class="bg-[#020505] pt-24 pb-12 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 mb-20"
+        >
+          <div class="col-span-2 lg:col-span-2">
+            <a href="#" class="text-2xl font-black tracking-tighter text-white">
+              PRINTIFY<span class="text-emerald-500 italic">PRO</span>
+            </a>
+            <p class="mt-6 text-gray-500 max-w-sm leading-relaxed text-sm">
+              Redefining industrial efficiency through Heat-Free PrecisionCore™
+              technology. Engineered for the next generation of high-volume
+              output.
+            </p>
+            <div
+              class="mt-8 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/5 border border-emerald-500/10"
+            >
+              <span class="relative flex h-2 w-2">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
+                ></span>
+              </span>
+              <span
+                class="text-[10px] font-bold text-emerald-500 uppercase tracking-widest"
+                >Global Systems Online</span
+              >
+            </div>
+          </div>
+
+          <div>
+            <h4
+              class="text-[11px] font-black text-white uppercase tracking-[0.2em] mb-8"
+            >
+              Hardware
+            </h4>
+            <ul class="space-y-4 text-sm text-gray-500">
+              <li>
+                <a
+                  href="#home-office"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Office PrintifyPro</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#business"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Enterprise Inkjet</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#large-format"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Industrial Format</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#textile"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Textile & DTG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#label-pos"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Label & POS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#dot-matrix"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Dot Matrix</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-[11px] font-black text-white uppercase tracking-[0.2em] mb-8"
+            >
+              Ecosystem
+            </h4>
+            <ul class="space-y-4 text-sm text-gray-500">
+              <li>
+                <a
+                  href="./products.html"
+                  class="hover:text-emerald-400 transition-colors"
+                  >PrintifyPro Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./services.html"
+                  class="hover:text-emerald-400 transition-colors"
+                  >PrintifyPro Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./services.html"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Managed Print (MPS)</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-emerald-400 transition-colors"
+                  >Drivers & Firmware</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-emerald-400 transition-colors"
+                  >Ink Subscription</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./services.html"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Service Centers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-emerald-400 transition-colors"
+                  >Warranty Registry</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-[11px] font-black text-white uppercase tracking-[0.2em] mb-8"
+            >
+              Corporate
+            </h4>
+            <ul class="space-y-4 text-sm text-gray-500">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >About Technology</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Sustainability</a
+                >
+              </li>
+              <li>
+                <a href="pp.html" class="hover:text-white transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="terms.html" class="hover:text-white transition-colors"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a href="rr.html" class="hover:text-white transition-colors"
+                  >Returns & Refunds</a
+                >
+              </li>
+              <li>
+                <a href="#contacts" class="hover:text-white transition-colors"
+                  >Contact Expert</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <p
+            class="text-[11px] font-bold text-gray-600 uppercase tracking-widest"
+          >
+            © 2026 PRINTIFYPRO GLOBAL INC. <span class="mx-2">|</span> SITEMAP
+          </p>
+
+          <div class="flex gap-6">
+            <a
+              href="#"
+              class="text-gray-600 hover:text-white transition-colors"
+            >
+              <span class="text-[10px] font-bold tracking-widest uppercase"
+                >LinkedIn</span
+              >
+            </a>
+            <a
+              href="#"
+              class="text-gray-600 hover:text-white transition-colors"
+            >
+              <span class="text-[10px] font-bold tracking-widest uppercase"
+                >X (Twitter)</span
+              >
+            </a>
+            <a
+              href="#"
+              class="text-gray-600 hover:text-white transition-colors"
+            >
+              <span class="text-[10px] font-bold tracking-widest uppercase"
+                >Instagram</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.getElementById("mobile-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        btn.textContent = menu.classList.contains("hidden") ? "☰" : "✕";
+      });
+
+      // Optional: Basic form submission feedback (for demo)
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert(
+          "Thank you! Your enquiry has been submitted. Our team will contact you soon.",
+        );
+        this.reset();
+      });
+    </script>
+  </body>
+</html>

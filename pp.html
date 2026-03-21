@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | PrintifyPro Global</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
+    <style>
+        body { font-family: "Inter", sans-serif; background-color: #050a0a; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .text-gradient { background: linear-gradient(to right, #34d399, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-[#050a0a] text-white">
+
+    <header
+      class="fixed top-0 z-[100] w-full border-b border-white/5 bg-[#050a0a]/80 backdrop-blur-xl"
+    >
+      <nav class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="flex h-24 items-center justify-between">
+          <a
+            href="index.html"
+            class="group flex items-center gap-2 text-2xl font-black tracking-tighter text-white"
+          >
+            <div
+              class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-400 to-cyan-500 text-black shadow-lg shadow-emerald-500/20 group-hover:rotate-12 transition-transform"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+              >
+                <path
+                  d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"
+                />
+                <rect x="6" y="14" width="12" height="8" rx="2" />
+                <path d="M6 9V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v5" />
+              </svg>
+            </div>
+            <span
+              >PRINTIFY<span class="text-emerald-500 italic">PRO</span></span
+            >
+          </a>
+
+          <div class="hidden lg:flex items-center gap-10">
+            <div
+              class="flex items-center gap-8 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400"
+            >
+              <a
+                href="products.html"
+                class="hover:text-emerald-400 transition-colors"
+                >Products</a
+              >
+              <a
+                href="services.html"
+                class="hover:text-emerald-400 transition-colors"
+                >Services</a
+              >
+              <a
+                href="#business"
+                class="hover:text-emerald-400 transition-colors"
+                >Enterprise</a
+              >
+              <a
+                href="#large-format"
+                class="hover:text-emerald-400 transition-colors"
+                >Industrial</a
+              >
+            </div>
+
+            <div class="h-6 w-px bg-white/10 mx-2"></div>
+
+            <a
+              href="#support"
+              class="text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors"
+            >
+              Support
+            </a>
+          </div>
+
+          <div class="flex items-center gap-6">
+            <button
+              class="hidden sm:flex items-center gap-2 rounded-xl bg-white text-black px-6 py-3 text-sm font-black hover:bg-emerald-400 transition-all active:scale-95"
+            >
+              Find Your Unit
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="3"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+
+            <button
+              id="mobile-menu-btn"
+              class="lg:hidden text-white hover:text-emerald-400 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        id="mobile-menu"
+        class="hidden fixed inset-0 z-[90] bg-[#050a0a] pt-32 px-10"
+      >
+        <div
+          class="flex flex-col gap-8 text-3xl font-black text-white uppercase tracking-tighter"
+        >
+          <a href="products.html" class="hover:text-emerald-500">Products</a>
+          <a href="services.html" class="hover:text-emerald-500">Services</a>
+          <a href="#business" class="hover:text-emerald-500">Enterprise</a>
+          <a href="#large-format" class="hover:text-emerald-500">Industrial</a>
+          <a href="#textile" class="hover:text-emerald-500">Textile</a>
+          <a href="#support" class="text-lg text-gray-500 mt-4"
+            >Customer Support</a
+          >
+
+          <a
+            href="#contact"
+            class="mt-10 py-5 bg-emerald-500 text-black text-center rounded-2xl text-xl"
+          >
+            Consult an Expert
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-40 pb-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl font-black tracking-tighter mb-4">DATA <span class="text-gradient">PRIVACY.</span></h1>
+            <p class="text-gray-500 font-mono text-sm mb-12 uppercase tracking-widest">Effective Date: March 21, 2026</p>
+
+            <div class="space-y-12">
+                <section>
+                    <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="text-emerald-500">01.</span> Information We Collect
+                    </h2>
+                    <div class="glass p-8 rounded-3xl text-gray-400 text-sm leading-relaxed space-y-4">
+                        <p>We collect information necessary to provide professional printing solutions, including:</p>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li><strong class="text-white">Account Data:</strong> Name, business email, and billing hardware signatures.</li>
+                            <li><strong class="text-white">Telemetry:</strong> Ink levels, nozzle health, and page counts via the Smart Panel app to facilitate Managed Print Services.</li>
+                            <li><strong class="text-white">Print Assets:</strong> Temporary caching of print files for cloud-based processing (deleted automatically after job completion).</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="text-cyan-500">02.</span> How We Use Your Data
+                    </h2>
+                    <div class="glass p-8 rounded-3xl text-gray-400 text-sm leading-relaxed space-y-4">
+                        <p>Your data is used exclusively to enhance your hardware experience. We do **not** sell user print habits or business data to third-party advertisers.</p>
+                        <p>Usage includes automated ink fulfillment, preventative maintenance alerts, and improving our Heat-Free PrecisionCore™ algorithms.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="text-purple-500">03.</span> Enterprise-Grade Security
+                    </h2>
+                    <div class="glass p-8 rounded-3xl text-gray-400 text-sm leading-relaxed space-y-4">
+                        <p>All data transmissions between your PrintifyPro hardware and our servers are protected by **AES-256 encryption**. Industrial blueprints and medical imaging data are processed within isolated, SOC2-compliant environments.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="text-yellow-500">04.</span> Cookies & Tracking
+                    </h2>
+                    <div class="glass p-8 rounded-3xl text-gray-400 text-sm leading-relaxed space-y-4">
+                        <p>We use essential cookies to maintain your session and "performance cookies" to understand how you interact with our technical documentation and driver downloads.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="text-emerald-400">05.</span> Global Compliance
+                    </h2>
+                    <div class="glass p-8 rounded-3xl text-gray-400 text-sm leading-relaxed space-y-4">
+                        <p>PrintifyPro Global adheres to <strong class="text-white">GDPR</strong>, <strong class="text-white">CCPA</strong>, and international data protection standards. You may request a full export or deletion of your business data at any time via the Privacy Portal.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="mt-20 p-10 glass rounded-[2rem] border-emerald-500/10 text-center">
+                <p class="text-gray-400 text-xs uppercase tracking-widest mb-4">Data Protection Officer</p>
+                <a href="mailto:privacy@printifypro.com" class="text-emerald-400 font-black hover:underline">PRIVACY@PRINTIFYPRO.COM</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#020505] pt-24 pb-12 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 mb-20"
+        >
+          <div class="col-span-2 lg:col-span-2">
+            <a href="#" class="text-2xl font-black tracking-tighter text-white">
+              PRINTIFY<span class="text-emerald-500 italic">PRO</span>
+            </a>
+            <p class="mt-6 text-gray-500 max-w-sm leading-relaxed text-sm">
+              Redefining industrial efficiency through Heat-Free PrecisionCore™
+              technology. Engineered for the next generation of high-volume
+              output.
+            </p>
+            <div
+              class="mt-8 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/5 border border-emerald-500/10"
+            >
+              <span class="relative flex h-2 w-2">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
+                ></span>
+              </span>
+              <span
+                class="text-[10px] font-bold text-emerald-500 uppercase tracking-widest"
+                >Global Systems Online</span
+              >
+            </div>
+          </div>
+
+          <div>
+            <h4
+              class="text-[11px] font-black text-white uppercase tracking-[0.2em] mb-8"
+            >
+              Hardware
+            </h4>
+            <ul class="space-y-4 text-sm text-gray-500">
+              <li>
+                <a
+                  href="#home-office"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Office PrintifyPro</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#business"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Enterprise Inkjet</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#large-format"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Industrial Format</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#textile"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Textile & DTG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#label-pos"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Label & POS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#dot-matrix"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Dot Matrix</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-[11px] font-black text-white uppercase tracking-[0.2em] mb-8"
+            >
+              Ecosystem
+            </h4>
+            <ul class="space-y-4 text-sm text-gray-500">
+              <li>
+                <a
+                  href="./products.html"
+                  class="hover:text-emerald-400 transition-colors"
+                  >PrintifyPro Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./services.html"
+                  class="hover:text-emerald-400 transition-colors"
+                  >PrintifyPro Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./services.html"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Managed Print (MPS)</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-emerald-400 transition-colors"
+                  >Drivers & Firmware</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-emerald-400 transition-colors"
+                  >Ink Subscription</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./services.html"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Service Centers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-emerald-400 transition-colors"
+                  >Warranty Registry</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-[11px] font-black text-white uppercase tracking-[0.2em] mb-8"
+            >
+              Corporate
+            </h4>
+            <ul class="space-y-4 text-sm text-gray-500">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >About Technology</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >Sustainability</a
+                >
+              </li>
+              <li>
+                <a href="pp.html" class="hover:text-white transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="terms.html" class="hover:text-white transition-colors"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a href="rr.html" class="hover:text-white transition-colors"
+                  >Returns & Refunds</a
+                >
+              </li>
+              <li>
+                <a href="#contacts" class="hover:text-white transition-colors"
+                  >Contact Expert</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <p
+            class="text-[11px] font-bold text-gray-600 uppercase tracking-widest"
+          >
+            © 2026 PRINTIFYPRO GLOBAL INC. <span class="mx-2">|</span> SITEMAP
+          </p>
+
+          <div class="flex gap-6">
+            <a
+              href="#"
+              class="text-gray-600 hover:text-white transition-colors"
+            >
+              <span class="text-[10px] font-bold tracking-widest uppercase"
+                >LinkedIn</span
+              >
+            </a>
+            <a
+              href="#"
+              class="text-gray-600 hover:text-white transition-colors"
+            >
+              <span class="text-[10px] font-bold tracking-widest uppercase"
+                >X (Twitter)</span
+              >
+            </a>
+            <a
+              href="#"
+              class="text-gray-600 hover:text-white transition-colors"
+            >
+              <span class="text-[10px] font-bold tracking-widest uppercase"
+                >Instagram</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+        <script>
+      const btn = document.getElementById("mobile-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        btn.textContent = menu.classList.contains("hidden") ? "☰" : "✕";
+      });
+
+      // Optional: Basic form submission feedback (for demo)
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert(
+          "Thank you! Your enquiry has been submitted. Our team will contact you soon.",
+        );
+        this.reset();
+      });
+    </script>
+</body>
+</html>

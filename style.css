@@ -1,0 +1,15 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #050a0a;
+}
+/* Fix for mobile browsers that don't support backdrop-filter well */
+.header-glass {
+  background-color: #050a0a; /* Solid fallback */
+}
+@media (min-width: 1024px) {
+  .header-glass {
+    background-color: rgba(5, 10, 10, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+}
