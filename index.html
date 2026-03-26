@@ -1146,7 +1146,7 @@
           </div>
 
           <div class="lg:col-span-7">
-            <form
+            <form  id="contactForm"
               class="bg-white/[0.03] backdrop-blur-xl border border-white/10 p-8 md:p-12 rounded-[2.5rem] shadow-2xl"
             >
               <div class="grid md:grid-cols-2 gap-6 mb-6">
@@ -1157,6 +1157,7 @@
                   >
                   <input
                     type="text"
+                    name="name"
                     placeholder="John Doe"
                     class="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-2xl text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500/20 transition-all placeholder:text-gray-600"
                   />
@@ -1168,6 +1169,7 @@
                   >
                   <input
                     type="email"
+                    name="email"
                     placeholder="john@company.com"
                     class="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-2xl text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500/20 transition-all placeholder:text-gray-600"
                   />
@@ -1228,7 +1230,7 @@
               </div>
 
               <button
-                type="submit"
+                type="submit" id="submitBtn"
                 class="group relative w-full py-5 bg-emerald-500 text-black font-black text-lg rounded-2xl overflow-hidden transition-all hover:bg-emerald-400 active:scale-[0.98]"
               >
                 <span
@@ -1486,14 +1488,66 @@
         menu.classList.toggle("hidden");
         btn.textContent = menu.classList.contains("hidden") ? "☰" : "✕";
       });
+    </script>
 
-      // Optional: Basic form submission feedback (for demo)
-      document.querySelector("form").addEventListener("submit", function (e) {
+        <script>
+      const form = document.getElementById("contactForm");
+      const submitBtn = document.getElementById("submitBtn");
+
+      if (!form || !submitBtn) {
+        console.error("Form or button not found! Check IDs.");
+      }
+
+      form.addEventListener("submit", async function (e) {
         e.preventDefault();
-        alert(
-          "Thank you! Your enquiry has been submitted. Our team will contact you soon.",
-        );
-        this.reset();
+
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = "Sending...";
+        submitBtn.disabled = true;
+
+        // Only name + email + source
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+
+        const payload = {
+          name: data.name || "",
+          email: data.email || "",
+          source: "Printer Enquiry",
+        };
+
+        const scriptURL =
+          "https://script.google.com/macros/s/AKfycbxbbTn2EAIny8K04H4DcdeImFDo3cInttOxDZ0iJwU7Zhn2JivahEsho_RcXDNhDJM2/exec";
+
+        try {
+          const response = await fetch(scriptURL, {
+            method: "POST",
+            body: new URLSearchParams(payload), // form-urlencoded (no preflight)
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+          });
+
+          const resultText = await response.text();
+          console.log("Response:", resultText);
+
+          if (
+            resultText.trim() === "Success" ||
+            resultText.toLowerCase().includes("success")
+          ) {
+            alert("✅ Thank you! Your information has been received.");
+            form.reset();
+          } else {
+            alert("❌ Something went wrong. Server said: " + resultText);
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          alert(
+            "❌ Connection error. Please check your internet and try again.",
+          );
+        }
+
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
       });
     </script>
   </body>
